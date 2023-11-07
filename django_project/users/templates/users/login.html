@@ -9,12 +9,12 @@
 
             {% csrf_token %}
             <fieldset class= "form-group">
-                <legend class = 'border-bottom mb-4'> Join Today </legend>
+                <legend class = 'border-bottom mb-4'> Log In </legend>
                 {{ form|crispy }}
             </fieldset>
 
             <div class = 'form-group'>
-                <button class= btn btn-outline-infor type="submit"> Sign Up </button>
+                <button class= btn btn-outline-infor type="submit"> Login </button>
             </div>
         
         </form>
@@ -22,7 +22,7 @@
         <div class= "border-top pt-3">
 
             <small class = "text-muted">
-                Already have an account<a class = "ml-2" href = "{% url 'login' %}"> Sign in</a>
+                Need an account<a class = "ml-2" href = "{% url 'register' %}"> Sign up now</a>
 
         </div>
 
